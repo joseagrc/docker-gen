@@ -9,4 +9,6 @@ ENV DOCKER_HOST unix:///tmp/docker.sock
 
 RUN wget -qO- $DOWNLOAD_URL | tar xvz -C /usr/local/bin
 
+COPY nginx.tmpl /etc/docker-gen/templates/
+
 ENTRYPOINT ["/usr/local/bin/docker-gen"]
