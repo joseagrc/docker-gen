@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="Jason Wilder <mail@jasonwilder.com>"
+LABEL maintainer="José Arturo García <jose.arturo.garcia@gmail.com>"
 
 RUN apk -U add openssl
 
